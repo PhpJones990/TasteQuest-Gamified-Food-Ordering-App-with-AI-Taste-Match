@@ -110,5 +110,52 @@ a
 {
     font-size: 80px; 
     text-align: center; 
+} 
+
+.quote-marquee 
+{
+    border-block: 3px solid var(--primary-highlight-color);   
+    font-size: 15px;
+    display: flex; 
+    overflow-x: auto; 
+} 
+
+.quote-marquee::-webkit-scrollbar 
+{
+    display: none; 
 }
 
+.marquee-group 
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+} 
+
+.marquee-to-left 
+{
+    animation: marquee-spin-left 15s infinite linear; 
+}
+
+.marquee-to-right 
+{
+    animation: marquee-spin-right 15s infinite linear; 
+}
+
+.marquee-item 
+{
+    flex: 0 0 20rem; 
+}
+
+@keyframes marquee-spin-left 
+{
+    from { translate: 0; } 
+    to { translate: -100%; }     
+} 
+
+@keyframes marquee-spin-right 
+{
+    from { translate: -100%; } 
+    to { translate: 0; }     
+}
