@@ -69,9 +69,13 @@ a
     align-items: center;
     padding: 5px 30px; 
     font-size: 15px; 
-    color: var(--secondary-highlight-color); 
     height: 60px; 
 } 
+
+.nav-main a 
+{
+    color: var(--secondary-highlight-color); 
+}
 
 .nav-item 
 {
@@ -148,6 +152,7 @@ a
 .marquee-item 
 {
     flex: 0 0 20rem; 
+    user-select: none;
 }
 
 @keyframes marquee-spin-left 
@@ -196,6 +201,7 @@ a
     position: relative; 
     left: 25%;  
     cursor: pointer; 
+    user-select: none;
     transition: all 0.5s ease; 
 } 
 
@@ -210,4 +216,66 @@ a
     height: 120px; 
     margin-bottom: 0; 
     border-radius: 20px;
+} 
+
+.home-bento 
+{
+    display: grid; 
+    grid-template-columns: repeat(4, 200px); 
+    grid-template-rows: repeat(3, 200px); 
+    gap: 20px; 
+    justify-content: center;
+    grid-template-areas: 
+    "recommend order order profile" 
+    "recommend ai-taste ai-taste favorites" 
+    "about about about game";
+} 
+
+.bento-item 
+{
+    padding: 0 20px; 
+    overflow: hidden;
+}
+
+.bento-recommend 
+{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+} 
+
+.bento-recommend > div 
+{
+    width: 150px; 
+} 
+
+.bento-recommend > div > img 
+{
+    width: 100%; 
+    object-fit: cover; 
+    border-radius: 20px;
+} 
+
+.bento-recommend > div  > p 
+{ 
+    color: var(--secondary-highlight-color); 
+    font-size: 12px;
+    text-align: center;
+}
+
+.btn 
+{
+    background-color: var(--primary-highlight-color); 
+    color: #fff; 
+    text-align: center; 
+    padding: 5px; 
+    border-radius: 5px;  
+    border: 2px solid var(--primary-highlight-color); 
+    transition: all 0.5s ease; 
+} 
+
+.btn:hover 
+{
+    background-color: #fff; 
+    color: var(--primary-highlight-color); 
 }

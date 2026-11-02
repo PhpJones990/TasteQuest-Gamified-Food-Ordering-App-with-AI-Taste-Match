@@ -15,19 +15,19 @@
         <div class="nav-main box-decor">
             <div class="nav-item"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4966CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house preview-icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> 
-                <a>Home</a>
+                <a href="#">Home</a>
             </div>
             <div class="nav-item"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4966CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass preview-icon"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg> 
-                <a>Explore</a> 
+                <a href="pages/explore.html">Explore</a> 
             </div>
             <div class="nav-item"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4966CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paper-bag preview-icon"><path d="M5.364 3.848C4 6 3 9.652 3 12.652V19a2 2 0 002 2h14a2 2 0 002-2v-5c0-2.334-1.816-4.668-2.622-7.002"/><path d="M7 3h11.379a2 2 0 011.789 1.106l.723 1.447A1 1 0 0119.997 7h-8.525a2 2 0 01-1.789-1.106L8.79 4.105a2 2 0 10-3.579 1.789l2.261 4.522A5 5 0 018 12.652V21"/></svg> 
-                <a>Orders</a>
+                <a href="pages/view_orders.html">Orders</a>
             </div>
             <div class="nav-item"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4966CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart preview-icon"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg> 
-                <a>Favorites</a>
+                <a href="pages/favorites.html">Favorites</a> 
             </div> 
         </div>
         <div class="nav-profile box-decor box-hover">
@@ -114,6 +114,26 @@
         </div>
     </section>
 
+    <section style="margin-top: 50px;">
+        <h3 style="text-align: center; font-size: 25px;">Let's Start Your Order Game!! 🎮 🍱 🍥</h3> 
+        <div class="home-bento">
+            <div class="bento-item bento-recommend box-decor box-hover" style="grid-area: recommend;">
+                <h4>Recommendation</h4> 
+                <div>
+                    <img src="data/images/foods/Lahpet Thoke.png" alt="Lahpet Thoke"> 
+                    <p><span style="color: #F87058;">Lahpet Thoke</span>, A delicious <br><span style="color: #F87058;">Tea Leaf Salad</span></p> 
+                    <p>At <span style="font-size: 15px;"><strong><del>299$</del> <span style="color: #F87058;">99$</span></strong></span>, ❤ ❤ ❤ ❤ ❤</p>
+                </div> 
+                <a href="pages/explore.html" class="btn" style="margin-top: 35px; width: 150px;">Explore</a>
+            </div>
+            <div class="bento-item box-decor box-hover" style="grid-area: order;"></div> 
+            <div class="bento-item box-decor box-hover" style="grid-area: profile;"></div>
+            <div class="bento-item box-decor box-hover" style="grid-area: ai-taste;"></div>
+            <div class="bento-item box-decor box-hover" style="grid-area: favorites;"></div>
+            <div class="bento-item box-decor box-hover" style="grid-area: about;"></div>
+            <div class="bento-item box-decor box-hover" style="grid-area: game;"></div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
