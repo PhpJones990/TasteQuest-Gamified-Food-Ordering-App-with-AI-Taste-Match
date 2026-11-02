@@ -13,7 +13,8 @@ body
     background-color: var(--primary-background-color); 
     color: var(--primary-font-color); 
     box-sizing: border-box; 
-    font-family: "Oswald", Arial, Helvetica, sans-serif
+    font-family: "Oswald", Arial, Helvetica, sans-serif; 
+    overflow-x: hidden;
 }
 
 a 
@@ -117,7 +118,8 @@ a
     border-block: 3px solid var(--primary-highlight-color);   
     font-size: 15px;
     display: flex; 
-    overflow-x: auto; 
+    overflow-x: auto;  
+    cursor: default;
 } 
 
 .quote-marquee::-webkit-scrollbar 
@@ -158,4 +160,54 @@ a
 {
     from { translate: -100%; } 
     to { translate: 0; }     
+} 
+
+.image-slide-container 
+{
+    width: 100vw; 
+    height: 200px; 
+    overflow: hidden; 
+    margin: 20px auto; 
+    display: flex; 
+    align-items: center; 
+}  
+
+.image-track 
+{
+    /* border: 1px solid blue;  */
+    display: flex;  
+    align-items: center; 
+    height: 180px; 
+    gap: 20px;  
+    transform: translate(0%, 0%); 
+}
+
+.image-slide-card 
+{
+    width: 180px;
+    height: 150px;
+    background-color: #fff; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 30px; 
+    position: relative; 
+    left: 25%;  
+    cursor: pointer; 
+    transition: all 0.5s ease; 
+} 
+
+.image-slide-card:hover  
+{
+    transform: translateY(-5%);
+}
+
+.slide-image 
+{
+    width: 120px; 
+    height: 120px; 
+    margin-bottom: 0; 
+    border-radius: 20px;
 }
