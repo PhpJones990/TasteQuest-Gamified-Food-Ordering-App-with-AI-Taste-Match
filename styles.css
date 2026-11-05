@@ -286,6 +286,65 @@ a
 
 }  
 
+.bento-profile 
+{
+    display: flex; 
+    flex-direction: column; 
+    gap: 0; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.bento-profile > h4, .bento-profile > p, .bento-profile
+{
+    margin: 5px; 
+    padding: 0;
+}
+
+.bento-profile  img 
+{
+    width: 100px;  
+    border-radius: 50%; 
+    border: 5px solid var(--primary-highlight-color); 
+} 
+
+.bento-ai-taste 
+{
+    padding: 0; 
+} 
+
+.bento-ai-item 
+{
+    margin: 10px 20px -10px 10px;  
+    position: relative;
+}
+
+.ba-item1 
+{
+    font-size: 40px; 
+    text-align: center; 
+} 
+
+.ba-item2 
+{
+    font-size: 20px; 
+    text-align: center;  
+}
+
+.ba-item3 
+{
+    font-size: 40px;
+    text-align: center; 
+} 
+
+.bento-match-btn 
+{
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: 5px; 
+    width: 150px;  
+}
 
 
 
