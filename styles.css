@@ -346,5 +346,29 @@ a
     width: 150px;  
 }
 
+.bento-favorites 
+{
+    padding: 0; 
+    position: relative;
+}
 
+.bf-item 
+{
+    margin: 0;
+}
 
+.bf-item1 
+{
+    font-size: 30px;
+} 
+
+.bf-item2 
+{
+    font-size: 20px;
+} 
+
+.bf-item3 
+{
+    font-size: 40px; 
+    color: var(--primary-highlight-color);
+}
