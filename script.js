@@ -45,4 +45,54 @@ slide_container.onmousemove = e =>
             }
         );
     }
-}
+} 
+
+
+const productCards = document.querySelectorAll(".product-card"); 
+
+productCards.forEach((card) => 
+{
+    const addBtn = card.querySelector(".add-to-cart-btn"); 
+    const quantityController = card.querySelector(".quantity-controller"); 
+    const minusBtn = card.querySelector(".minus-btn"); 
+    const plusBtn = card.querySelector(".plus-btn"); 
+    const qtyCount = card.querySelector(".qty-count"); 
+
+    let count = 0; 
+
+    addBtn.addEventListener("click", () => 
+    {
+        count = 1; 
+        updateDisplay(); 
+    }); 
+
+    plusBtn.addEventListener("click", () => 
+    {
+        count++; 
+        updateDisplay(); 
+    }); 
+
+    minusBtn.addEventListener("click", () => 
+    {
+        if (count > 0) 
+        {
+            count--; 
+            updateDisplay(); 
+        }
+    });
+
+    function updateDisplay() 
+    {
+        if (count > 0) 
+        {
+            addBtn.classList.add("hide"); 
+            quantityController.classList.remove("hide"); 
+            qtyCount.textContent = count; 
+        } 
+        else 
+        {
+            quantityController.classList.add("hide"); 
+            addBtn.classList.remove("hide"); 
+        }
+    }
+}); 
