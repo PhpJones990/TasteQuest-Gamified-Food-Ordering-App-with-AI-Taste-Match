@@ -806,6 +806,11 @@ hr
     text-align: center; 
     font-size: 30px; 
     font-weight: bold; 
+} 
+
+.prev-orders button 
+{
+    cursor: pointer; 
 }
 
 .prev-order-item 
