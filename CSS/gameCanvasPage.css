@@ -1,0 +1,17 @@
+:root 
+{
+    --primary-background-color: #F6EFDF; 
+    --primary-font-color: #242D4D; 
+    --primary-highlight-color: #F87058; 
+    --secondary-highlight-color: #4966CC; 
+}
+
+#mainGameCanvas 
+{
+    margin: 30px auto; 
+    width: 700px; 
+    height: 400px; 
+    display: block; 
+    border: 5px solid var(--primary-highlight-color);  
+    border-radius: 15px;
+}
