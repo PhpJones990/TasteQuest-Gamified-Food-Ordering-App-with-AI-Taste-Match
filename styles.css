@@ -15,6 +15,7 @@ body
     font-family: "Oswald", Arial, Helvetica, sans-serif; 
     overflow-x: hidden;
     box-sizing: border-box; 
+    margin: 0; 
 }
 
 a 
@@ -488,7 +489,9 @@ a
 
 .scroll-container-vertical 
 { 
-    border: 1px solid blue; 
+    background-color: #fff; 
+    border-radius: 20px; 
+    border: 3px solid var(--primary-highlight-color);
     width: 80%;  
     margin: 50px auto; 
     display: grid; 
@@ -497,8 +500,27 @@ a
     
     max-height: 500px; 
     overflow-y: auto; 
-    padding: 10px; 
+    padding: 30px; 
+
+    scrollbar-width: thin; 
+    scrollbar-color: #4a4a4a transparent;
 } 
+
+.scroll-container-vertical::-webkit-scrollbar 
+{
+    width: 8px; 
+} 
+
+.scroll-container-vertical::-webkit-scrollbar-thumb{
+    background-color: #2a2a2a; 
+    border-radius: 8px;
+  
+    border: 2px solid #121212; 
+}
+
+.scroll-container-vertical::-webkit-scrollbar-thumb:hover{
+    background-color: #4a4a4a; 
+}
 
 .product-card 
 {
@@ -509,7 +531,13 @@ a
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     padding-bottom: 20px; 
+    transition: transform 0.5s ease; 
 } 
+
+.product-card:hover 
+{
+    transform: scale(1.05);
+}
 
 .product-image 
 {
@@ -603,3 +631,92 @@ a
     display: none !important; 
 }
 
+
+.app-footer {
+  background-color: #121212; 
+  color: #a0a0a0; 
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.academic-note {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background-color: #2a2a2a;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #e0e0e0;
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .tech-stack {
+    justify-content: center;
+  }
+}

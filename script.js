@@ -48,7 +48,9 @@ slide_container.onmousemove = e =>
 } 
 
 
-const productCards = document.querySelectorAll(".product-card"); 
+function attachItemAddEventListener() 
+{
+    const productCards = document.querySelectorAll(".product-card"); 
 
 productCards.forEach((card) => 
 {
@@ -96,3 +98,42 @@ productCards.forEach((card) =>
         }
     }
 }); 
+
+}
+
+const productContainer = document.getElementById("product-container"); 
+
+function renderAvailableFoods(data) 
+{
+    const gridHTML = data.map(card => 
+        {
+            return `<div class="product-card">
+                <img src=${card.image} class="product-image"> 
+                <h4 class="product-title">${card.name}</h4> 
+                <p class="product-price">${card.price}</p> 
+                <div class="product-control-container">
+                    <button class="add-to-cart-btn">Add</button> 
+
+                    <div class="quantity-controller hide"> 
+                        <button class="qty-btn minus-btn">-</button>
+                        <span class="qty-count">1</span>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                </div>
+            </div>`    
+        }
+    ).join(""); 
+    productContainer.innerHTML = gridHTML; 
+
+    attachItemAddEventListener(); 
+} 
+
+fetch("../data/foods_data/available_foods.json").then(response => 
+    {
+        if (!response.ok) throw new Error("Cannot Access the Available Foods JSON File!"); 
+        return response.json();     
+    }
+).then(data => renderAvailableFoods(data)).catch(error => console.error("Error: Loading JSON: ", error)); 
+
+
+
