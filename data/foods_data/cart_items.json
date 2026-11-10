@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 4, 
+        "name" : "Pad Thai", 
+        "price" : "$39", 
+        "image" : "../data/images/foods/PadThai.png"
+    }, 
+    {
+        "id" : 5, 
+        "name" : "Nan Gyi Thoke", 
+        "price" : "$99", 
+        "image" : "../data/images/foods/NanGyiThoke.png" 
+    }, 
+    {
+        "id" : 6, 
+        "name" : "Kimchi Salad", 
+        "price" : "$29", 
+        "image" : "../data/images/foods/KimchiSalad.png"
+    }, 
+    {
+        "id" : 7, 
+        "name" : "Pho", 
+        "price" : "$49", 
+        "image" : "../data/images/foods/Pho.png"
+    }, 
+    {
+        "id" : 8, 
+        "name" : "Ramen", 
+        "price" : "$99", 
+        "image" : "../data/images/foods/Ramen.png"
+    }, 
+    {
+        "id" : 9, 
+        "name" : "Shan Khao Swe", 
+        "price" : "$49", 
+        "image" : "../data/images/foods/ShanKhaoSwe.png"
+    }
+]

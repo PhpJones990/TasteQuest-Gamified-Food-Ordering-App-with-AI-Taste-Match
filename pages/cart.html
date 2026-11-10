@@ -46,7 +46,65 @@
     <h1 style="text-align: center;">Your Cart</h1> 
 
     <main>
-        
+        <div class="cart-main-container">
+            <div class="cart-items-card box-decor box-hover">
+                <div id="cart-items-list" class="cart-items-list">
+
+                </div>
+
+                <div class="cart-empty-message" style="display: none;">
+                    <p>Your cart is empty.</p>
+                    <a href="explore.html" class="cart-shop-now-btn">Explore Items</a>
+                </div>
+            </div>
+
+            <div class="cart-summary-card box-decor box-hover">
+                <h2 class="summary-title">Order Summary</h2>
+
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value" id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Discount (-20%)</span>
+                        <span class="summary-value discount-value" id="cart-discount">-$0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Delivery Fee</span>
+                        <span class="summary-value" id="cart-delivery">$0</span>
+                    </div>
+
+                    <hr class="summary-divider">
+
+                    <div class="summary-row total-row">
+                        <span class="summary-label">Total</span>
+                        <span class="summary-value" id="cart-total">$0</span>
+                    </div>
+                </div>
+
+                <div class="promo-code-container">
+                    <div class="promo-input-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="promo-tag-icon">
+                            <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/>
+                            <path d="M7 7h.01"/>
+                        </svg>
+                        <input type="text" placeholder="Add promo code" class="promo-input" id="promo-input">
+                    </div>
+                    <button type="button" class="promo-apply-btn" id="promo-btn">Apply</button>
+                </div>
+
+                <button type="button" class="checkout-btn">
+                    <span>Go to Checkout</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cart-arrow-icon">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <script src="../scripts/cart.js"></script>
     </main>
 
     <footer class="app-footer">
