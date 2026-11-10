@@ -1720,3 +1720,68 @@ hr
         justify-content: flex-start;
     }
 }
+
+.profile-box 
+{
+    border: 5px solid var(--primary-highlight-color); 
+    width: 80%; 
+    height: 300px; 
+    margin: 130px auto 20px auto; 
+    border-radius: 15px; 
+    background-color: #fff; 
+    position: relative; 
+    text-align: center; 
+} 
+
+.profile-box > img 
+{
+    position: absolute; 
+    width: 200px; 
+    border: 3px double var(--primary-highlight-color); 
+    border-radius: 50%; 
+    transform: translate(-50%, -50%);  
+} 
+
+.profile-box > h3 
+{
+    margin-top: 110px; 
+    font-size: 50px; 
+    color: var(--primary-highlight-color)
+} 
+
+.profile-box > p 
+{
+    font-size: 30px; 
+    margin-top: -20px;
+} 
+
+.profile-page-box
+{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    justify-content: center; 
+    gap: 100px; 
+    height: 600px; 
+    grid-template-areas: 
+    "profile-status-box ai-taste-match" 
+    "profile-status-box waiting-game"; 
+    padding: 20px; 
+    width: 80%; 
+    margin: 30px auto; 
+} 
+
+.profile-ai-taste, .profile-waiting-game 
+{
+    border: 5px solid var(--primary-highlight-color); 
+    background-color: #fff; 
+    border-radius: 15px; 
+    padding: 20px; 
+    position: relative; 
+    color: var(--primary-font-color); 
+}
+ 
+.profile-waiting-game  
+{
+    text-align: end; 
+}
