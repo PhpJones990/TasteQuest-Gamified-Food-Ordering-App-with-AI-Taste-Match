@@ -1,0 +1,14 @@
+[
+    {
+        "id" : 4, 
+        "name" : "Pad Thai", 
+        "price" : "$39", 
+        "image" : "../data/images/foods/PadThai.png"
+    }, 
+    {
+        "id" : 5, 
+        "name" : "Nan Gyi Thoke", 
+        "price" : "$99", 
+        "image" : "../data/images/foods/NanGyiThoke.png" 
+    } 
+]
