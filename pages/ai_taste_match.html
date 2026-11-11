@@ -53,6 +53,114 @@
 
     <h1 style="text-align: center;">AI Taste Match</h1> 
 
+    <main class="page-container">
+    
+    <section class="hero-section">
+      <span class="category-tag">Triple-Vector AI Engine</span>
+      <h1 class="hero-title">Decode Your Craving: <span class="highlight">AI Taste Match</span></h1>
+      <p class="hero-subtitle">
+        We map your flavor cravings, favorite hobbies, and preferred aromas into a unique flavor vector to predict your exact culinary match.
+      </p>
+    </section>
+
+    <div class="match-layout">
+      
+      <form class="selection-card" onsubmit="return false;">
+        
+        <div class="form-group">
+          <label class="group-label">1. Primary Taste Craving</label>
+          <div class="option-grid">
+            <label class="pill-option">
+              <input type="radio" name="taste" value="spicy" />
+              <span>🌶️ Extra Spicy</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="taste" value="umami" checked />
+              <span>🍜 Deep Umami</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="taste" value="savory" />
+              <span>🧀 Rich & Savory</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="taste" value="sweet" />
+              <span>🍯 Sweet & Glazed</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="group-label">2. Current Activity & Hobby</label>
+          <div class="option-grid">
+            <label class="pill-option">
+              <input type="radio" name="hobby" value="gaming" checked />
+              <span>🎮 Gaming & Chilling</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="hobby" value="reading" />
+              <span>📚 Deep Reading</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="hobby" value="coding" />
+              <span>💻 Coding Session</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="hobby" value="music" />
+              <span>🎧 Listening to Music</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="group-label">3. Preferred Aroma & Smell</label>
+          <div class="option-grid">
+            <label class="pill-option">
+              <input type="radio" name="aroma" value="smoke" checked />
+              <span>🔥 Woodsmoke & Char</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="aroma" value="garlic" />
+              <span>🧄 Roasted Garlic</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="aroma" value="herbs" />
+              <span>🌿 Fresh Herbs</span>
+            </label>
+            <label class="pill-option">
+              <input type="radio" name="aroma" value="citrus" />
+              <span>🍊 Citrus & Zest</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="generate-btn">Generate Taste Match</button>
+      </form>
+
+      <article class="result-card box-hover">
+        <div class="match-badge">98.4% Match Score</div>
+        
+        <div class="result-header">
+          <span class="vibe-tag">Gaming + Deep Umami</span>
+          <h2 class="result-title">The Gamer's Smoky Umami Pair</h2>
+          <p class="dish-names">Wood-Fired Artisanal Pizza + Crispy Garlic Fritters</p>
+        </div>
+
+        <div class="analysis-box">
+          <h3><span class="highlight">AI Vector Breakdown</span></h3>
+          <ul>
+            <li><strong class="highlight">Taste Profile:</strong> High savory & umami balance with light charred crust notes.</li>
+            <li><strong class="highlight">Hobby Synergy:</strong> Convenient finger-food pairing designed for gaming sessions.</li>
+            <li><strong class="highlight">Aroma Synergy:</strong> Woodsmoke crust complemented by sweet roasted garlic dipping sauce.</li>
+          </ul>
+        </div>
+
+        <button class="order-btn">Order This Match — $18.99</button>
+      </article>
+
+    </div>
+
+  </main>
+
     <footer class="app-footer">
       <div class="footer-grid">
     
